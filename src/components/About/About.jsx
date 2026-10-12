@@ -2,8 +2,9 @@ import './About.css';
 
 const stack = [
   { label: 'Languages', items: ['TypeScript', 'JavaScript', 'Python', 'SQL'] },
-  { label: 'Product', items: ['React', 'FastAPI', 'Node.js'] },
-  { label: 'Data and ops', items: ['MongoDB', 'Redis', 'Docker', 'Git'] },
+  { label: 'Frontend', items: ['React', 'CSS', 'Redux', 'MobX'] },
+  { label: 'Product', items: ['FastAPI', 'Node.js', 'WebRTC'] },
+  { label: 'Data and ops', items: ['MongoDB', 'Redis', 'Docker', 'Git', 'Firebase', 'GitHub Actions', 'Google Cloud'] },
   { label: 'Tests', items: ['Jest', 'pytest'] },
 ];
 
@@ -20,6 +21,7 @@ const About = () => {
           <p>
             I like the part of a product that has to stay correct. Who can see a record,
             what gets saved, and what happens when two people edit it at once.
+            English and Hebrew are both native languages for me.
           </p>
           <p>
             At Faintlines that meant React features, Python services, CLI tools, and the
@@ -42,7 +44,7 @@ const About = () => {
           ))}
           <div>
             <dt>Also</dt>
-            <dd>Laravel, PHP, Next.js, Firebase</dd>
+            <dd>Laravel, PHP, Next.js</dd>
           </div>
         </dl>
       </div>

@@ -11,11 +11,17 @@ const experiences = [
     achievements: [
       'Worked on Peek a Phone, past 5 million downloads with a 5-star Google Play rating, and on The Founder',
       'Built React features and Python services, including microservices around the games',
+      'Built, validated, and shipped AI-powered, client facing features, before the big AI boom',
       'Built CLI tools, dashboards, and AI-backed automation for content production',
+      'Worked closely with the product manager and with teams in other time zones, and brought insights and suggestions',
+      'Took the initiative to fix bugs and ship features',
+      'Fired client events for many player actions, and used that analytics plus Sentry to understand behavior and errors',
+      'Shipped with A/B tests as a regular part of the process',
+      'Worked on monetization and the in-game economy',
       'Onboarded developers, wrote the development process, and reviewed code before it shipped',
       'Added Jest coverage on the frontend and pytest coverage on the backend',
     ],
-    techStack: ['React', 'Python', 'MongoDB', 'Docker', 'Jest', 'pytest'],
+    techStack: ['React', 'Python', 'MongoDB', 'Docker', 'Jest', 'pytest', 'Sentry'],
     links: [
       { label: 'Company', url: 'https://faintlines.com' },
       { label: 'Peek a Phone', url: 'https://play.google.com/store/apps/details?id=com.peekaphone.app&hl=en' },
