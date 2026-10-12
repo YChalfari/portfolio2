@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { createPortal } from 'react-dom';
+import Chevron from '../Chevron';
 import './ProjectGallery.css';
 
 function normalizeMedia(item, index) {
@@ -98,7 +99,7 @@ const ProjectGallery = ({ images, media, projectTitle }) => {
                 }}
                 aria-label="Previous image"
               >
-                ‹
+                <Chevron direction="prev" />
               </button>
               <button
                 className="gallery-nav gallery-next"
@@ -108,7 +109,7 @@ const ProjectGallery = ({ images, media, projectTitle }) => {
                 }}
                 aria-label="Next image"
               >
-                ›
+                <Chevron direction="next" />
               </button>
             </>
           )}
@@ -146,7 +147,7 @@ const ProjectGallery = ({ images, media, projectTitle }) => {
                 }}
                 aria-label="Previous image"
               >
-                ‹
+                <Chevron direction="prev" />
               </button>
               <button
                 className="gallery-modal-nav gallery-modal-next"
@@ -156,7 +157,7 @@ const ProjectGallery = ({ images, media, projectTitle }) => {
                 }}
                 aria-label="Next image"
               >
-                ›
+                <Chevron direction="next" />
               </button>
             </>
           )}

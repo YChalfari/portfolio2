@@ -1,0 +1,87 @@
+.reel {
+  width: min(100%, 34rem);
+  overflow: hidden;
+  border-radius: 0.9rem;
+  border: 1px solid var(--border-color);
+  background: #141210;
+}
+
+.reel:hover {
+  border-color: var(--accent-color);
+}
+
+.reel-stage {
+  position: relative;
+  background: #1a1612;
+}
+
+.reel-frame {
+  display: block;
+  color: var(--text-primary);
+}
+
+.reel-frame:hover {
+  color: var(--text-primary);
+}
+
+.reel-frame video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 8 / 5;
+  object-fit: contain;
+}
+
+.reel-caption {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.55rem 0.85rem 0.65rem;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+}
+
+.reel-caption:hover {
+  color: var(--text-primary);
+}
+
+.reel-caption em {
+  font-style: normal;
+  color: var(--text-tertiary);
+}
+
+.reel-nav {
+  position: absolute;
+  top: 50%;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
+  line-height: 0;
+  border-radius: 999px;
+  border: 1px solid rgba(244, 239, 230, 0.18);
+  background: rgba(18, 17, 15, 0.78);
+  color: var(--text-primary);
+  transform: translateY(-50%);
+}
+
+.reel-nav svg {
+  display: block;
+}
+
+.reel-nav:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.reel-prev {
+  left: 0.65rem;
+}
+
+.reel-next {
+  right: 0.65rem;
+}

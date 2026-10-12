@@ -9,7 +9,7 @@ const experiences = [
     note: 'Also designed game content and made videos for the titles.',
     date: '2022 – 2025',
     achievements: [
-      'Contributed to mobile games with 1.5M+ downloads, including Peek a Phone and The Founder',
+      'Worked on Peek a Phone, past 5 million downloads with a 5-star Google Play rating, and on The Founder',
       'Built React features and Python services, including microservices around the games',
       'Built CLI tools, dashboards, and AI-backed automation for content production',
       'Onboarded developers, wrote the development process, and reviewed code before it shipped',

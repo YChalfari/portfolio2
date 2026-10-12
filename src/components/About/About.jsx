@@ -28,11 +28,9 @@ const About = () => {
           </p>
           <h3>How I work with models</h3>
           <p>
-            In Family Recipes the model only receives recipes the current person can open,
-            and every answer cites them. A suggestion stays a preview until someone accepts
-            it, and that acceptance is a normal save with the same history as a hand edit.
-            I use coding agents the same way: they can draft, and a person reviews before
-            it becomes the record.
+            On Family Recipes the useful parts are an i18n foundation with a Hebrew
+            translation, and AI that drafts, suggests, and answers from the book. A model
+            can draft. A person accepts it before it becomes the record.
           </p>
         </div>
         <dl className="stack">

@@ -28,7 +28,7 @@ const Contact = () => {
         <span className="section-hebrew" lang="he">קשר</span>
       </header>
       <p className="contact-lead">
-        I’m looking for a full-stack role in Israel or remote. The fastest way to reach me is email.
+        I’m looking for a full-stack, QA, or related role, in Israel or remote. The fastest way to reach me is email.
       </p>
       <ul className="contact-links">
         {links.map((link) => (
