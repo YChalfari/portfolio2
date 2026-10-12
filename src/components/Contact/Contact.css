@@ -1,0 +1,85 @@
+.contact {
+  padding: 2rem 0 5rem;
+}
+
+.contact-lead {
+  max-width: 36rem;
+  font-size: 1.15rem;
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.contact-links,
+.contact-references ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contact-links {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  max-width: 760px;
+}
+
+.contact-links a,
+.contact-references a {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  height: 100%;
+  padding: 1rem 1.05rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0.9rem;
+  color: var(--text-primary);
+}
+
+.contact-links a:hover,
+.contact-references a:hover {
+  border-color: var(--accent-color);
+  color: var(--text-primary);
+}
+
+.contact-links span,
+.contact-references span {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.contact-references {
+  margin-top: 2.5rem;
+  max-width: 760px;
+}
+
+.contact-references h3 {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  font-weight: 560;
+  margin-bottom: 0.35rem;
+}
+
+.contact-references > p {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.contact-references ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.contact-references small {
+  color: var(--text-tertiary);
+}
+
+@media (max-width: 700px) {
+  .contact-links,
+  .contact-references ul {
+    grid-template-columns: 1fr;
+  }
+}

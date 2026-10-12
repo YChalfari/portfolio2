@@ -1,0 +1,209 @@
+.project-card {
+  position: relative;
+  overflow: hidden;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 2rem;
+  transition: border-color var(--transition-pop), box-shadow var(--transition-pop), transform var(--transition-pop);
+  margin-bottom: 2rem;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: radial-gradient(
+    52px circle at var(--spot-x, -80px) var(--spot-y, -80px),
+    rgba(79, 195, 247, 0.7) 0%,
+    rgba(79, 195, 247, 0.22) 32%,
+    transparent 68%
+  );
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+.project-card:hover::before {
+  opacity: 1;
+}
+
+.project-card > *:not(.project-spot-layer) {
+  position: relative;
+  z-index: 1;
+}
+
+.project-spot-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.project-spot-trail {
+  position: absolute;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(
+    circle,
+    rgba(79, 195, 247, 0.55) 0%,
+    rgba(79, 195, 247, 0.16) 38%,
+    transparent 70%
+  );
+  pointer-events: none;
+  animation: spot-fade 1s linear forwards;
+}
+
+@keyframes spot-fade {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.project-card:hover {
+  border-color: var(--accent-color);
+  transform: scale(1.02);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+}
+
+.project-card:has(.gallery-main:hover) {
+  transform: none;
+}
+
+.project-summary {
+  cursor: pointer;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  margin: 0;
+  font-weight: 600;
+}
+
+.project-toggle {
+  background: none;
+  border: 1px solid var(--border-color);
+  color: var(--accent-color);
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  font-family: var(--font-mono);
+}
+
+.project-toggle:hover {
+  background: var(--accent-color);
+  color: var(--bg-primary);
+  border-color: var(--accent-color);
+}
+
+.project-description {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tech-tag {
+  padding: 0.25rem 0.75rem;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
+.project-expanded {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color);
+  animation: fadeIn 0.3s ease;
+}
+
+.project-highlights {
+  margin: 0 0 1.5rem;
+  padding-left: 1.25rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.project-highlights li + li {
+  margin-top: 0.5rem;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.project-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: transparent;
+  border: 1px solid var(--accent-color);
+  color: var(--accent-color);
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  border-radius: 4px;
+  transition: background 0.18s ease, color 0.18s ease, transform var(--transition-pop);
+}
+
+.project-link:hover {
+  background: var(--accent-color);
+  color: var(--bg-primary);
+  transform: scale(1.03);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .project-card {
+    padding: 1.5rem;
+  }
+
+  .project-links {
+    flex-direction: column;
+  }
+
+  .project-link {
+    justify-content: center;
+  }
+}
+

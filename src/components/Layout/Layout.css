@@ -1,0 +1,40 @@
+.layout {
+  min-height: 100vh;
+  position: relative;
+}
+
+.main-content {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  /* Add left padding to prevent overlap with side nav on desktop */
+  /* Side nav at left: 2rem + nav width (~100px for dot + gap + label) + margin */
+  padding-left: calc(2rem + 140px);
+  transition: padding-left 0.3s ease;
+}
+
+/* Tablet and narrow desktop (when dev tools might be open) */
+@media (max-width: 1024px) {
+  .main-content {
+    /* Side nav moves to left: 1rem, reduced padding for narrower viewports */
+    padding-left: calc(1rem + 120px);
+  }
+}
+
+/* Small desktop / wide tablet */
+@media (max-width: 900px) {
+  .main-content {
+    /* Further reduce padding when viewport gets narrower */
+    padding-left: calc(1rem + 80px);
+  }
+}
+
+/* Bottom nav takes over at the same breakpoint as SideNav */
+@media (max-width: 1000px) {
+  .main-content {
+    padding: 0 1.25rem;
+    padding-bottom: calc(80px + env(safe-area-inset-bottom));
+  }
+}
+

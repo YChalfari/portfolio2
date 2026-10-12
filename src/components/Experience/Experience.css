@@ -1,0 +1,41 @@
+.experience {
+  padding: 2rem 0 4rem;
+}
+
+.experience-timeline {
+  max-width: 760px;
+}
+
+.education {
+  max-width: 760px;
+  margin-top: 0.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.education-kicker {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent-color);
+  margin-bottom: 0.35rem;
+}
+
+.education h3 {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 560;
+  margin-bottom: 0.35rem;
+}
+
+.education p:last-child {
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .experience {
+    padding: 4rem 0;
+  }
+}
+
