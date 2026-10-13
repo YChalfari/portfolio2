@@ -39,8 +39,10 @@ const Hero = () => {
               </a>
             </li>
             <li>
-              <strong>Open</strong>
-              <span>to full-stack, QA, or a related role</span>
+              <a href="#contact">
+                <strong>Open</strong>
+                <span>to full-stack, QA, or a related role</span>
+              </a>
             </li>
           </ul>
           <div className="hero-actions">
