@@ -1,21 +1,9 @@
-import { useState } from 'react';
 import myPhoto from '../../assets/me.jpg';
 import { PEEK_A_PHONE, projectReels } from '../../data/projects';
 import ProjectReel from './ProjectReel';
 import './Hero.css';
 
 const Hero = () => {
-  const [shift, setShift] = useState({ x: 0, y: 0, tilt: 0 });
-
-  const followPortrait = (event) => {
-    const rect = event.currentTarget.getBoundingClientRect();
-    const x = (event.clientX - rect.left) / rect.width - 0.5;
-    const y = (event.clientY - rect.top) / rect.height - 0.5;
-    setShift({ x: x * 18, y: y * 18, tilt: x * 4 });
-  };
-
-  const resetPortrait = () => setShift({ x: 0, y: 0, tilt: 0 });
-
   return (
     <section id="hero" className="hero">
       <div className="hero-top">
@@ -27,7 +15,10 @@ const Hero = () => {
             <span className="eyebrow-dot" aria-hidden="true" />
             <span>Central Israel</span>
           </p>
-          <h1>Yitz Chalfari</h1>
+          <div className="hero-name">
+            <img className="hero-avatar" src={myPhoto} alt="" />
+            <h1>Yitz Chalfari</h1>
+          </div>
           <p className="lede">
             I worked on Peek a Phone at Faintlines, past 5 million downloads with a 5-star
             Google Play rating, and I built the tools the team used to ship it. On my own
@@ -55,21 +46,6 @@ const Hero = () => {
           <div className="hero-actions">
             <a className="button button-primary" href="#projects">See the work</a>
             <a className="button button-ghost" href="mailto:chalfari@gmail.com">chalfari@gmail.com</a>
-          </div>
-        </div>
-        <div className="hero-visual">
-          <div
-            className="hero-portrait"
-            onMouseMove={followPortrait}
-            onMouseLeave={resetPortrait}
-          >
-            <img
-              src={myPhoto}
-              alt="Yitz Chalfari"
-              style={{
-                transform: `translate(${shift.x}px, ${shift.y}px) rotate(${shift.tilt}deg) scale(1.08)`,
-              }}
-            />
           </div>
         </div>
       </div>
