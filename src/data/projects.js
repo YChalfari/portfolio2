@@ -22,6 +22,7 @@ export const projects = [
       'A Redis token bucket caps model calls, and it fails open if Redis is down so the cookbook stays available',
       'Sign-in across two hosts: Firebase for Google and Facebook, then API-issued access and refresh tokens',
       'IndexedDB stores recipes on the device so the book still works offline',
+      'Tracked a broken Allrecipes import to the site refusing the server’s fetch, then restored it by requesting the page like a browser and falling back to Allrecipes’ print view, which still includes the ingredients and directions'
     ],
     links: [
       { label: 'Live demo', href: 'https://family-recipes-z1.vercel.app' },
