@@ -4,9 +4,9 @@ import './SideNav.css';
 const sections = [
   { id: 'hero', label: 'Home', abbrev: 'Home' },
   { id: 'about', label: 'About', abbrev: 'About' },
-  { id: 'experience', label: 'Experience', abbrev: 'Exp' },
-  { id: 'projects', label: 'Projects', abbrev: 'Work' },
-  { id: 'contact', label: 'Contact', abbrev: 'Mail' },
+  { id: 'experience', label: 'Experience', abbrev: 'Experience' },
+  { id: 'projects', label: 'Projects', abbrev: 'Projects' },
+  { id: 'contact', label: 'Contact', abbrev: 'Contact' },
 ];
 
 const SideNav = () => {

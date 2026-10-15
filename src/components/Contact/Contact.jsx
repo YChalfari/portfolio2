@@ -27,9 +27,11 @@ const Contact = () => {
         <h2>Contact</h2>
         <span className="section-hebrew" lang="he">קשר</span>
       </header>
+      <h3 className="contact-heading">Let’s talk</h3>
       <p className="contact-lead">
-        I’m looking for a full-stack, QA, or related role, in Israel or remote. The fastest way to reach me is email.
+        I’m looking for full-stack development opportunities in Israel or remotely. I’m also open to roles where my development and testing experience would be useful.
       </p>
+      <p className="contact-lead">Email is the quickest way to reach me.</p>
       <ul className="contact-links">
         {links.map((link) => (
           <li key={link.name}>

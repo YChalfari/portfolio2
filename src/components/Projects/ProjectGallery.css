@@ -84,19 +84,20 @@
   display: flex;
   gap: 0.5rem;
   margin-top: 1rem;
-  overflow-x: auto;
-  padding-bottom: 0.5rem;
+  overflow: hidden;
 }
 
 .gallery-thumbnail {
-  width: 80px;
-  height: 60px;
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 80px;
+  aspect-ratio: 4 / 3;
+  height: auto;
   padding: 0;
   border: 2px solid transparent;
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.3s ease;
-  flex-shrink: 0;
   overflow: hidden;
   background: var(--bg-primary);
 }

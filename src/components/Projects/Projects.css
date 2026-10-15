@@ -24,7 +24,7 @@
   font-weight: 560;
   letter-spacing: -0.03em;
   line-height: 1.15;
-  max-width: 28ch;
+  max-width: 18em;
   margin-bottom: 1rem;
 }
 
@@ -84,6 +84,17 @@
   height: 0.35rem;
   border-radius: 50%;
   background: var(--accent-color);
+}
+
+.tech-more {
+  margin-top: 0.15rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--accent-color);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  cursor: pointer;
 }
 
 .shipped {

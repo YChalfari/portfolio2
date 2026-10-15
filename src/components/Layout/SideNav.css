@@ -126,10 +126,16 @@
   }
 
   .side-nav-mobile .nav-link {
+    flex: 1 1 0;
+    min-width: 0;
     flex-direction: column;
     gap: 0.25rem;
-    padding: 0.5rem;
-    min-width: 60px;
+    padding: 0.5rem 0.2rem;
+  }
+
+  .side-nav-mobile .nav-label,
+  .side-nav-mobile .nav-label-abbrev {
+    white-space: normal;
   }
 
   .side-nav-mobile .nav-label {
@@ -172,7 +178,7 @@
     display: block;
     opacity: 1;
     transform: translateX(0);
-    font-size: 0.65rem;
+    font-size: 0.62rem;
     color: var(--text-secondary);
     text-align: center;
     line-height: 1.2;

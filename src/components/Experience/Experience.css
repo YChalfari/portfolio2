@@ -29,8 +29,13 @@
   margin-bottom: 0.35rem;
 }
 
+.education-date,
 .education p:last-child {
   color: var(--text-secondary);
+}
+
+.education-date {
+  margin-bottom: 0.35rem;
 }
 
 @media (max-width: 768px) {
