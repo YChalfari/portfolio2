@@ -62,7 +62,7 @@ const About = () => {
             ))}
             <div>
               <dt>Additional experience</dt>
-              <dd>Writing Scripts· Reviewing PRs · Making Coffee</dd>
+              <dd>Writing Scripts · Reviewing PRs · Making Coffee</dd>
             </div>
           </dl>
         </div>
