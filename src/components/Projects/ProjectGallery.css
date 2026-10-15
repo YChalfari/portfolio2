@@ -27,6 +27,8 @@
 .gallery-main:has(.gallery-image-contain) {
   aspect-ratio: auto;
   height: auto;
+  width: min(100%, var(--gallery-max, 100%));
+  margin-inline: auto;
 }
 
 .gallery-image-contain {

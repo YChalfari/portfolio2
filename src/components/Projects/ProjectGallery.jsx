@@ -16,6 +16,7 @@ function normalizeMedia(item, index) {
     caption: item.caption,
     alt: item.alt || `Image ${index + 1}`,
     fit: item.fit,
+    maxWidth: item.maxWidth,
   };
 }
 
@@ -92,7 +93,11 @@ const ProjectGallery = ({ images, media, projectTitle }) => {
   return (
     <>
       <div className="project-gallery">
-        <div className="gallery-main" onClick={() => openModal(currentIndex)}>
+        <div
+          className="gallery-main"
+          style={current.maxWidth ? { '--gallery-max': current.maxWidth } : undefined}
+          onClick={() => openModal(currentIndex)}
+        >
           {renderVisual(current)}
           {items.length > 1 && (
             <>

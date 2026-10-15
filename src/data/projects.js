@@ -93,8 +93,9 @@ export const projects = [
       {
         src: asset('projects/meets/architecture.svg'),
         alt: 'Architecture of Meets: a browser, a VPS, one Node process, and saved data',
-        caption: 'A browser joins the live room. Accounts and chat are saved on the VPS. Calls connect the two players directly.',
+        caption: 'Meets tech architecture.',
         fit: 'contain',
+        maxWidth: '28rem',
       },
     ],
   },
