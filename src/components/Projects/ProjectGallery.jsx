@@ -15,6 +15,7 @@ function normalizeMedia(item, index) {
     captions: item.captions,
     caption: item.caption,
     alt: item.alt || `Image ${index + 1}`,
+    fit: item.fit,
   };
 }
 
@@ -80,7 +81,7 @@ const ProjectGallery = ({ images, media, projectTitle }) => {
       <img
         src={item.src}
         alt={item.alt || projectTitle}
-        className={inModal ? 'gallery-modal-image' : 'gallery-main-image'}
+        className={`${inModal ? 'gallery-modal-image' : 'gallery-main-image'}${item.fit === 'contain' ? ' gallery-image-contain' : ''}`}
       />
     );
   };

@@ -24,6 +24,22 @@
   transform: scale(1.05);
 }
 
+.gallery-main:has(.gallery-image-contain) {
+  aspect-ratio: auto;
+  height: auto;
+}
+
+.gallery-image-contain {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: #12110f;
+}
+
+.gallery-main:hover .gallery-image-contain {
+  transform: none;
+}
+
 .gallery-main-video {
   background: #1a1612;
 }

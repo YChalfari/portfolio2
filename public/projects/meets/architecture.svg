@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="1620" viewBox="0 0 720 1620" role="img" aria-label="Meets architecture, from the player's browser to a VPS">
+  <rect width="720" height="1620" fill="#12110f"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#e7a04a"/>
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8fbfa8"/>
+    </marker>
+  </defs>
+
+  <g font-family="system-ui, sans-serif">
+    <rect x="24" y="24" width="672" height="340" rx="16" fill="#1a1814" stroke="#5a5146" stroke-width="1.5"/>
+    <text x="48" y="62" fill="#e7a04a" font-size="22">Player's browser</text>
+
+    <rect x="48" y="86" width="624" height="92" rx="10" fill="#1c1a16" stroke="#e7a04a" stroke-width="1.5"/>
+    <text x="360" y="122" text-anchor="middle" fill="#f4efe6" font-size="28">React</text>
+    <text x="360" y="154" text-anchor="middle" fill="#b7b0a4" font-size="22">Menus, chat, and controls</text>
+
+    <line x1="360" y1="178" x2="360" y2="198" stroke="#e7a04a" stroke-width="2"/>
+    <text x="360" y="222" text-anchor="middle" fill="#e7a04a" font-size="20">event bus</text>
+    <line x1="360" y1="232" x2="360" y2="248" stroke="#e7a04a" stroke-width="2"/>
+
+    <rect x="48" y="250" width="624" height="92" rx="10" fill="#1c1a16" stroke="#5a5146" stroke-width="1.5"/>
+    <text x="360" y="286" text-anchor="middle" fill="#f4efe6" font-size="28">Phaser</text>
+    <text x="360" y="318" text-anchor="middle" fill="#b7b0a4" font-size="22">The shared room: walking, collision, camera</text>
+
+    <line x1="360" y1="364" x2="360" y2="408" stroke="#e7a04a" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="376" y="392" fill="#e7a04a" font-size="20">opens the site</text>
+
+    <rect x="24" y="420" width="672" height="300" rx="16" fill="#1a1814" stroke="#5a5146" stroke-width="1.5"/>
+    <text x="48" y="458" fill="#e7a04a" font-size="22">Linux VPS I administer</text>
+
+    <rect x="48" y="482" width="624" height="92" rx="10" fill="#1c1a16" stroke="#5a5146" stroke-width="1.5"/>
+    <text x="360" y="518" text-anchor="middle" fill="#f4efe6" font-size="28">Caddy</text>
+    <text x="360" y="550" text-anchor="middle" fill="#b7b0a4" font-size="22">HTTPS for the live site and for staging</text>
+
+    <line x1="360" y1="574" x2="360" y2="606" stroke="#e7a04a" stroke-width="2" marker-end="url(#arrow)"/>
+
+    <rect x="48" y="608" width="624" height="92" rx="10" fill="#1c1a16" stroke="#5a5146" stroke-width="1.5"/>
+    <text x="360" y="644" text-anchor="middle" fill="#f4efe6" font-size="28">Docker</text>
+    <text x="360" y="676" text-anchor="middle" fill="#b7b0a4" font-size="22">Production and staging, separate databases</text>
+
+    <line x1="360" y1="720" x2="360" y2="764" stroke="#e7a04a" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="376" y="748" fill="#e7a04a" font-size="20">one Node process</text>
+
+    <rect x="24" y="776" width="672" height="320" rx="16" fill="#1a1814" stroke="#5a5146" stroke-width="1.5"/>
+    <text x="48" y="814" fill="#e7a04a" font-size="22">Live room and API, same process</text>
+
+    <rect x="48" y="838" width="300" height="120" rx="10" fill="#1c1a16" stroke="#5a5146" stroke-width="1.5"/>
+    <text x="198" y="882" text-anchor="middle" fill="#f4efe6" font-size="26">Colyseus</text>
+    <text x="198" y="916" text-anchor="middle" fill="#b7b0a4" font-size="20">Who is in the</text>
+    <text x="198" y="940" text-anchor="middle" fill="#b7b0a4" font-size="20">room right now</text>
+
+    <rect x="372" y="838" width="300" height="120" rx="10" fill="#1c1a16" stroke="#5a5146" stroke-width="1.5"/>
+    <text x="522" y="882" text-anchor="middle" fill="#f4efe6" font-size="26">Hono</text>
+    <text x="522" y="916" text-anchor="middle" fill="#b7b0a4" font-size="20">Accounts, profiles,</text>
+    <text x="522" y="940" text-anchor="middle" fill="#b7b0a4" font-size="20">and mail</text>
+
+    <line x1="198" y1="958" x2="198" y2="990" stroke="#e7a04a" stroke-width="2"/>
+    <rect x="48" y="990" width="624" height="84" rx="10" fill="#1c1a16" stroke="#5a5146" stroke-width="1.5"/>
+    <text x="360" y="1024" text-anchor="middle" fill="#f4efe6" font-size="26">Shared TypeScript</text>
+    <text x="360" y="1054" text-anchor="middle" fill="#b7b0a4" font-size="22">Game physics runs on the server</text>
+
+    <line x1="522" y1="1096" x2="522" y2="1168" stroke="#8fbfa8" stroke-width="2" marker-end="url(#arrow-green)"/>
+    <text x="48" y="1140" fill="#8fbfa8" font-size="20">saved when you leave</text>
+
+    <rect x="24" y="1180" width="672" height="220" rx="16" fill="#1a1814" stroke="#8fbfa8" stroke-width="1.5"/>
+    <text x="48" y="1216" fill="#8fbfa8" font-size="22">Still there after you leave the room</text>
+
+    <ellipse cx="198" cy="1270" rx="130" ry="16" fill="#1c1a16" stroke="#8fbfa8" stroke-width="1.5"/>
+    <rect x="68" y="1270" width="260" height="70" fill="#1c1a16"/>
+    <line x1="68" y1="1270" x2="68" y2="1340" stroke="#8fbfa8" stroke-width="1.5"/>
+    <line x1="328" y1="1270" x2="328" y2="1340" stroke="#8fbfa8" stroke-width="1.5"/>
+    <ellipse cx="198" cy="1340" rx="130" ry="16" fill="#1c1a16" stroke="#8fbfa8" stroke-width="1.5"/>
+    <text x="198" y="1316" text-anchor="middle" fill="#f4efe6" font-size="24">SQLite</text>
+    <text x="198" y="1342" text-anchor="middle" fill="#b7b0a4" font-size="18">Accounts, chat, scores</text>
+
+    <ellipse cx="522" cy="1270" rx="130" ry="16" fill="#1c1a16" stroke="#8fbfa8" stroke-width="1.5"/>
+    <rect x="392" y="1270" width="260" height="70" fill="#1c1a16"/>
+    <line x1="392" y1="1270" x2="392" y2="1340" stroke="#8fbfa8" stroke-width="1.5"/>
+    <line x1="652" y1="1270" x2="652" y2="1340" stroke="#8fbfa8" stroke-width="1.5"/>
+    <ellipse cx="522" cy="1340" rx="130" ry="16" fill="#1c1a16" stroke="#8fbfa8" stroke-width="1.5"/>
+    <text x="522" y="1316" text-anchor="middle" fill="#f4efe6" font-size="24">Files</text>
+    <text x="522" y="1342" text-anchor="middle" fill="#b7b0a4" font-size="18">Photos and voice</text>
+
+    <rect x="24" y="1424" width="672" height="160" rx="16" fill="#1a1814" stroke="#e7a04a" stroke-width="1.5" stroke-dasharray="7 5"/>
+    <text x="48" y="1464" fill="#e7a04a" font-size="22">Calls do not pass through the VPS</text>
+    <rect x="48" y="1484" width="624" height="76" rx="10" fill="#1c1a16" stroke="#e7a04a" stroke-width="1.5" stroke-dasharray="6 4"/>
+    <text x="360" y="1516" text-anchor="middle" fill="#f4efe6" font-size="26">WebRTC</text>
+    <text x="360" y="1544" text-anchor="middle" fill="#b7b0a4" font-size="20">Voice and video go directly between two players</text>
+  </g>
+</svg>
