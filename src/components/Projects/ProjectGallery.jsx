@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { createPortal } from 'react-dom';
 import Chevron from '../Chevron';
+import CaptionedVideo from '../CaptionedVideo';
 import './ProjectGallery.css';
 
 function normalizeMedia(item, index) {
@@ -11,6 +12,7 @@ function normalizeMedia(item, index) {
     type: item.type || 'image',
     src: item.src,
     poster: item.poster,
+    captions: item.captions,
     caption: item.caption,
     alt: item.alt || `Image ${index + 1}`,
   };
@@ -58,10 +60,12 @@ const ProjectGallery = ({ images, media, projectTitle }) => {
   const renderVisual = (item, { inModal = false } = {}) => {
     if (item.type === 'video') {
       return (
-        <video
-          className={inModal ? 'gallery-modal-image' : 'gallery-main-image gallery-main-video'}
+        <CaptionedVideo
+          className={inModal ? '' : 'captioned-video-fill'}
+          videoClassName={inModal ? 'gallery-modal-image' : 'gallery-main-image gallery-main-video'}
           src={item.src}
           poster={item.poster}
+          captions={item.captions}
           muted={!inModal}
           loop
           playsInline

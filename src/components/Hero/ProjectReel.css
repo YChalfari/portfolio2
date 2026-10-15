@@ -24,6 +24,10 @@
   color: var(--text-primary);
 }
 
+.reel-frame .captioned-video {
+  width: 100%;
+}
+
 .reel-frame video {
   display: block;
   width: 100%;

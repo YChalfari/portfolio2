@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Chevron from '../Chevron';
+import CaptionedVideo from '../CaptionedVideo';
 import './ProjectReel.css';
 
 const ProjectReel = ({ items }) => {
@@ -23,10 +24,11 @@ const ProjectReel = ({ items }) => {
           </button>
         )}
         <a className="reel-frame" href={current.href}>
-          <video
+          <CaptionedVideo
             key={current.key}
             src={current.src}
             poster={current.poster}
+            captions={current.captions}
             muted
             loop
             playsInline
