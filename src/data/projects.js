@@ -32,6 +32,7 @@ export const projects = [
       {
         src: asset('projects/family-recipes/demo.mp4'),
         poster: asset('projects/family-recipes/poster.jpg'),
+        captions: false,
         alt: 'Family Recipes demo',
       },
     ],
@@ -40,6 +41,7 @@ export const projects = [
         type: 'video',
         src: asset('projects/family-recipes/demo.mp4'),
         poster: asset('projects/family-recipes/poster.jpg'),
+        captions: false,
         alt: 'Family Recipes demo, including the Hebrew interface',
         caption: 'The interface switches between English and Hebrew. A recipe keeps the direction it was written in.',
       },
