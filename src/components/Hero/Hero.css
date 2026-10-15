@@ -144,7 +144,19 @@
     padding-top: 2.5rem;
   }
 
+  .hero-copy {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-actions {
+    order: 1;
+    margin-bottom: 1.75rem;
+  }
+
   .proof {
+    order: 2;
     grid-template-columns: 1fr;
+    margin-bottom: 0;
   }
 }
