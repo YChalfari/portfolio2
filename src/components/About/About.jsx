@@ -62,7 +62,7 @@ const About = () => {
             ))}
             <div>
               <dt>Additional experience</dt>
-              <dd>Next.js · Laravel · PHP</dd>
+              <dd>Writing Scripts· Reviewing PRs · Making Coffee</dd>
             </div>
           </dl>
         </div>
