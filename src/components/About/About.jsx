@@ -33,7 +33,7 @@ const About = () => {
           <p>I speak English and Hebrew natively.</p>
           <h3 className="fun-title">Fun Stuff</h3>
           <p>
-            Outside of coding, I'm a father of three, a musician who plays guitar and piano, and a singer. I've been gaming since I was four, so working at Faintlines was a pretty great way to combine my love of games with my work.
+            Outside of coding, I'm a father of three, musician, and avid gamer. I've been gaming since I was four, so working at Faintlines was a pretty great way to combine my love of games with my work.
           </p>
           <h3>How I use AI</h3>
           <p>
