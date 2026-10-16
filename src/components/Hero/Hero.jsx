@@ -3,6 +3,8 @@ import { PEEK_A_PHONE, projectReels } from '../../data/projects';
 import ProjectReel from './ProjectReel';
 import './Hero.css';
 
+const resumeUrl = `${import.meta.env.BASE_URL}Itzik-Halfari-CV.pdf`;
+
 const Hero = () => {
   return (
     <section id="hero" className="hero">
@@ -54,6 +56,34 @@ const Hero = () => {
           </ul>
           <div className="hero-actions">
             <a className="button button-primary" href="#projects">See the work</a>
+            <a className="button button-ghost" href={resumeUrl} download="Itzik-Halfari-CV.pdf">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  d="M12 4v10"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.75"
+                  strokeLinecap="round"
+                />
+                <path
+                  d="M8 10.5 L12 14.5 L16 10.5"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.75"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M5 16.5V18a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-1.5"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.75"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              CV
+            </a>
             <a className="button button-ghost" href="#contact">Get in touch</a>
           </div>
         </div>

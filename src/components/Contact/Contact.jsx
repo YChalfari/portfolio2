@@ -1,9 +1,12 @@
 import './Contact.css';
 
+const resumeUrl = `${import.meta.env.BASE_URL}Itzik-Halfari-CV.pdf`;
+
 const links = [
   { name: 'Email', href: 'mailto:chalfari@gmail.com', label: 'chalfari@gmail.com' },
   { name: 'GitHub', href: 'https://github.com/YChalfari', label: 'YChalfari' },
   { name: 'LinkedIn', href: 'https://www.linkedin.com/in/itzik-chalfari', label: 'itzik-chalfari' },
+  { name: 'Resume', href: resumeUrl, label: 'Download PDF', download: true },
 ];
 
 const references = [
@@ -35,7 +38,12 @@ const Contact = () => {
       <ul className="contact-links">
         {links.map((link) => (
           <li key={link.name}>
-            <a href={link.href} target={link.href.startsWith('mailto:') ? undefined : '_blank'} rel="noopener noreferrer">
+            <a
+              href={link.href}
+              download={link.download ? 'Itzik-Halfari-CV.pdf' : undefined}
+              target={link.href.startsWith('mailto:') || link.download ? undefined : '_blank'}
+              rel="noopener noreferrer"
+            >
               <span>{link.name}</span>
               <strong>{link.label}</strong>
             </a>

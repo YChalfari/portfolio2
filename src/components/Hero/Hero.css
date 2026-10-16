@@ -152,6 +152,13 @@
   .hero-actions {
     order: 1;
     margin-bottom: 1.75rem;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+  }
+
+  .hero-actions .button {
+    padding: 0.75rem 0.8rem;
+    font-size: 0.9rem;
   }
 
   .proof {
