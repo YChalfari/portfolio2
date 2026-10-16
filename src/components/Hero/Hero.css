@@ -162,8 +162,6 @@
   }
 
   .proof {
-    order: 2;
-    grid-template-columns: 1fr;
-    margin-bottom: 0;
+    display: none;
   }
 }
