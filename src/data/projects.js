@@ -80,8 +80,7 @@ export const projects = [
       'Call signaling stays on the room socket. Voice and video go directly between the two players over WebRTC, so the server never carries the media.',
       'The live site and staging run on a Linux VPS I have root on. Docker keeps the two environments apart, Caddy serves HTTPS, and GitHub Actions ships each release over SSH.',
       'Seemless transition from a guest account to a verified email account.',
-      'Added lounge bots that join as Colyseus clients in that same Node process until we have some users.',
-      'Photos and voice messages are files, served from /uploads.',
+      'Added lounge bots that join as Colyseus clients in that same Node process initially as a dev tool to test UI on.',
     ],
     links: [
       { label: 'Demo', href: 'https://meetz.fun' },
