@@ -97,6 +97,32 @@ export const projects = [
       },
     ],
   },
+  {
+    id: 'not-google-photos',
+    title: 'Not Google Photos',
+    summary: 'A household photo library that lives on the PC.',
+    description: 'I built it to stop paying Google for photo storage and use the disk already in my PC. The household library runs there.',
+    tech: ['TypeScript', 'React', 'Hono', 'Drizzle', 'Postgres', 'pgvector', 'Capacitor', 'FastAPI', 'Docker'],
+    points: [
+      'The phone hashes each file, uploads only what the server is missing, and can delete its copy once the PC has it.',
+      'Photos are stored as their SHA-256, so the same file from two people only takes space once.',
+      'Uploads stream to a temp file and are renamed into place, so a crash doesn’t leave a partial file. If the library drive is unplugged, uploads stop.',
+      'InsightFace finds the faces and SigLIP embeds the picture for search, both on ONNX, in a service that never opens the database. A correction you make by hand sticks the next time it runs.',
+      'A year in the search becomes a date filter, and the other words match those vectors, in Hebrew or English.',
+      'The Android app is the same React UI, loaded from localhost, so it uses the pairing token instead of a cookie. Backup can wait for Wi-Fi or charging.',
+      'Photo URLs are short-lived signatures. They load without a cookie, access is still checked, and the ETag is the file hash.',
+      'The Mac advertises itself with Bonjour, since Docker on a Mac can’t. The phone tries home first, and uses Tailscale or a Cloudflare Tunnel when it’s away.',
+      'The library uses the date in the photo, so a late-night shot stays on that day.',
+      'Thumbnails are separate WebP files, with a ThumbHash until the image loads. A job reads the EXIF and builds them.',
+      'Finding a similar face or photo is a nearest-neighbor search in Postgres, with an HNSW index. Thumbnail, recognition, memory, and cleanup jobs live there too, and are safe to retry.',
+      'A change to the app or the backup engine builds a signed APK onto a GitHub Release. Phones install it with Obtainium, and it updates in place only if every build uses the same key.',
+    ],
+    links: [
+      { label: 'GitHub', href: 'https://github.com/YChalfari/not-google-photos' },
+    ],
+    videos: [],
+    media: [],
+  },
 ];
 
 export const projectReels = projects.flatMap((project) =>
