@@ -100,10 +100,11 @@ export const projects = [
   {
     id: 'not-google-photos',
     title: 'Not Google Photos',
-    summary: 'A household photo library that lives on the PC.',
-    description: 'I built it to stop paying Google for photo storage and use the disk already in my PC. The household library runs there.',
+    summary: 'A self-hosted photo library.',
+    description: "I built it to stop paying Google for photo storage and use what I've got. The household library runs there.",
     tech: ['TypeScript', 'React', 'Hono', 'Drizzle', 'Postgres', 'pgvector', 'Capacitor', 'FastAPI', 'Docker'],
     points: [
+      'Auto-backup, facial recognition, search, memories, and more.',
       'The phone hashes each file, uploads only what the server is missing, and can delete its copy once the PC has it.',
       'Photos are stored as their SHA-256, so the same file from two people only takes space once.',
       'Uploads stream to a temp file and are renamed into place, so a crash doesn’t leave a partial file. If the library drive is unplugged, uploads stop.',
